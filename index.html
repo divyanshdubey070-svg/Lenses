@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lenses | Premium Eyewear</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo"><span>LENSES</span>.</div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Eyeglasses</a></li>
+            <li><a href="#">Sunglasses</a></li>
+            <li><a href="#">Computer Glasses</a></li>
+            <li><a href="#">Our Story</a></li>
+        </ul>
+        <div class="nav-icons">
+            <div class="icon-box"><i class="far fa-heart"></i></div>
+            <div class="icon-box cart-trigger" onclick="toggleCart()">
+                <i class="fas fa-shopping-bag"></i>
+                <span class="badge" id="cart-count">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-text">
+            <h1>Vision Crafted for <br> <span>Perfection</span></h1>
+            <p>Premium lenses engineered for clarity, style, and comfort.</p>
+            <button class="cta-btn">Shop Collection</button>
+        </div>
+        </header>
+
+    <section class="features">
+        <div class="feature-item"><i class="fas fa-shield-alt"></i> 1 Year Warranty</div>
+        <div class="feature-item"><i class="fas fa-truck"></i> Free Shipping</div>
+        <div class="feature-item"><i class="fas fa-glasses"></i> 14 Day Returns</div>
+        <div class="feature-item"><i class="fas fa-eye"></i> Free Eye Test</div>
+    </section>
+
+    <section class="shop-container">
+        <div class="section-header">
+            <h2>Trending This Week</h2>
+            <div class="filter-btns">
+                <button class="active">All</button>
+                <button>Men</button>
+                <button>Women</button>
+            </div>
+        </div>
+
+        <div class="product-grid" id="product-grid">
+            </div>
+    </section>
+
+    <div class="cart-overlay" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Bag</h3>
+            <button onclick="toggleCart()" class="close-cart">&times;</button>
+        </div>
+        <div class="cart-body" id="cart-items">
+            <p class="empty-msg">Your cart is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="total">
+                <span>Total</span>
+                <span id="total-price">₹0</span>
+            </div>
+            <button class="checkout-btn">Checkout Securely</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
